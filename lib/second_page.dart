@@ -27,7 +27,8 @@ class SecondPage extends StatelessWidget {
               ),
             ),
             MaterialButton(
-              child: Text("Back"),
+              child: Text("Regresar"),
+              color: Colors.blueGrey,
               onPressed: () {
                 Navigator.of(context).pop(_textController.text);
               },
