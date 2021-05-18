@@ -19,7 +19,7 @@ class SecondPage extends StatelessWidget {
               padding: EdgeInsets.all(24.0),
               child: TextField(
                 controller: _textController,
-                maxLength: 10,
+                maxLength: 40,
                 decoration: InputDecoration(
                   labelText: "Ingrese nombre",
                   hintText: "Nombre",
@@ -27,7 +27,12 @@ class SecondPage extends StatelessWidget {
               ),
             ),
             MaterialButton(
-              child: Text("Regresar"),
+              child: Text(
+                "Regresar",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
               color: Colors.blueGrey,
               onPressed: () {
                 Navigator.of(context).pop(_textController.text);
